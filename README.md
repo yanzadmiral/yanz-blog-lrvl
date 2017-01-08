@@ -1,1 +1,1 @@
-# yanz-blog-lrvl
+Membuat blog dengan laravel 5.3
