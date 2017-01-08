@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Yblog\Http\Controllers\Auth;
 
-use App\User;
+use Yblog\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Yblog\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
 class RegisterController extends Controller
