@@ -1,0 +1,91 @@
+body {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  background-color: #fff;
+}
+
+.columns.is-fullheight {
+  margin-bottom: 0;
+}
+
+.footer {
+  margin-top:-10px;
+}
+
+.left-side .hero-body {
+  background-color: #eee;
+}
+
+.left-side .hero-body .title {
+  color: #000;
+  font-weight: bold;
+}
+
+.right-side .hero-body .container {
+  padding: 0px 30px;
+}
+
+.right-side .hero-body .container .column {
+  padding: 0px 30px;
+}
+
+.right-side .hero-body .blog-timestamp {
+  font-weight: bold;
+}
+
+.right-side .hero-body .blog-title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.right-side .hero-body .blog-summary {
+  font-size: 18px;
+  font-weight:lighter;
+  line-height: 1.5;
+}
+/*
+adsd
+
+*/
+hr {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.bg-covel-left {
+  background-color: #eee;
+  margin-bottom: 10px;
+}
+
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.show {display:block;}
+</style>
