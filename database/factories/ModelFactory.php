@@ -21,3 +21,12 @@ $factory->define(Yblog\User::class, function (Faker\Generator $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(Yblog\Artikel::class, function (Faker\Generator $faker) {
+    return [
+        'id' => str_random(10),
+        'user_id' => rand(1,100),
+        'title'   => $faker->text(30),
+        'content' => $faker->text,
+    ];
+});
