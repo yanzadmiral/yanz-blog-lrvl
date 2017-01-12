@@ -58,34 +58,20 @@
       <section class="hero is-fullheight is-default is-bold">
         <div class="hero-body">
           <div class="container">
-
-            <div class="column is-full-desktop">
-              <h1 class="blog-timestamp">
-                2 days ago
-              </h1>
+            @foreach ($artikel as $v)
+              <div class="column is-full-desktop">
+              <h1 class="blog-timestamp">{{$v->created_at->diffForHumans()}}</h1>
               <h1 class="blog-title">
-                <a href="">Cras feugiat euismod sem accumsan ultrices.</a>
+                <a href="artikel/{{$v->id_artikel}}">{{$v->title}}</a>
               </h1>
-              <h2 class="blog-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare malesuada dolor ut dictum. Pellentesque eget orci nisl. Vivamus sit amet ullamcorper elit. Donec mattis scelerisque dui sed convallis.
-              </h2>
-              Author :<a>Yayan</a> Tag :<a href="">php</a>,<a href="">html</a>
+              <h2 class="blog-summary">{{$v->content}}</h2>
+              Author :<a href="user/{{$v->user->id_user}}">{{$v->user->name}}</a> Tag :
+              @foreach ($v->tag as $k)
+                <a href="tag/{{$k->id_tag}}">{{$k->nama_tag}}</a>,  
+              @endforeach
             </div>
             <hr>
-            <div class="column is-full-desktop">
-              <h1 class="blog-timestamp">
-                2 days ago
-              </h1>
-              <h1 class="blog-title">
-                <a href="">Cras feugiat euismod sem accumsan ultrices.</a>
-              </h1>
-              <h2 class="blog-summary">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ornare malesuada dolor ut dictum. Pellentesque eget orci nisl. Vivamus sit amet ullamcorper elit. Donec mattis scelerisque dui sed convallis.
-              </h2>
-              Author :<a>Yayan</a> Tag :<a href="">php</a>,<a href="">html</a>
-            </div>
-            <hr>
-            
+            @endforeach 
         </div>
       </div>
 

@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('blogutama.awal');
-});
+Route::get('/','ShowContenControllerr@index');
+Route::get('/coba','ShowContenControllerr@coba');

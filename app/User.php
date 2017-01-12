@@ -14,6 +14,14 @@ class User extends Authenticatable
      *
      * @var array
      */
+    /**
+     * The database table used by the model.
+     *
+     * @var string
+     */
+    
+    protected $primaryKey = 'id_user';
+    public $incrementing = false;
     protected $fillable = [
         'id_user','name', 'email', 'password',
     ];
